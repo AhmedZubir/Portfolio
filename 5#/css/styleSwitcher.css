@@ -1,0 +1,89 @@
+
+
+.style-switcher{
+    position: fixed;
+    top: 20px;
+    right: 0;
+    z-index: 11;
+    background-color: #fdf9ff;
+    padding: 15px;
+    border-right: none;
+    border-radius: 0 0 0 5px;
+    -webkit-transform: translateX(101%);
+    transform: translateX(101%);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -wbkit-box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+
+.style-switcher.open{
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+}
+
+.style-switcher h5{
+    font-size: 16px;
+    color: #302e4d;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.style-switcher ul{
+    margin: 0;
+    padding: 0;
+    display: block;
+    margin-bottom: 5px;
+    list-style: none;
+}
+
+.style-switcher ul li{
+    display: inline-block;
+
+}
+.style-switcher ul li a{
+    height: 30px;
+    width: 30px;
+    display: block;
+    border-radius: 50%;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 2px;
+    border: none;
+}
+
+.style-switcher .toggle-style-switcher{
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    background-color: #fdf9ff;
+    left: -45px;
+    top: 0px;
+   
+    border-right: none;
+    text-align: center;
+    cursor: pointer;
+    border-radius:50% 0 0 50% ;
+}
+
+.style-switcher .toggle-style-switcher .fa{
+    font-size: 20px;
+    line-height: 43px;
+}
+
+label {
+    padding-left: 10%;
+}
+
+/* Dark Mode  */
+body.dark .style-switcher .toggle-style-switcher,
+body.dark .style-switcher{
+    background-color:#222222;
+}
+
+body.dark .style-switcher .toggle-style-switcher,
+body.dark label,
+body.dark .style-switcher h5{
+    color: #fdf9ff;
+}
